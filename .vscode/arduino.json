@@ -1,0 +1,5 @@
+{
+    "port": "COM4",
+    "board": "arduino:avr:uno",
+    "sketch": "2.Arduino Scripts\\1.GettingStarted\\Test1.ino"
+}
