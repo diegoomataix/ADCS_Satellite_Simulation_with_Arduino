@@ -14,7 +14,7 @@ void setup()
 {
     myServo.attach(11);   //servo is connected to pin 11
     myServo.write(angle); // set servo to starting ange
-    Serial.begin(115200);   //start serial communication
+    Serial.begin(230400);   //start serial communication
 }
 
 void determination()
