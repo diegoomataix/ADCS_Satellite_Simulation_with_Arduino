@@ -1,0 +1,59 @@
+LCD_function_data.o: \
+ C:/Users/diego/Dropbox/Academic/MENGSP~1/35330~1.DOC/ADCS_C~1/35C17~1.SIM/2D225~1.PHY/LCD/LCD_function_ert_rtw/LCD_function_data.c \
+ C:/Users/diego/Dropbox/Academic/MENGSP~1/35330~1.DOC/ADCS_C~1/35C17~1.SIM/2D225~1.PHY/LCD/LCD_function_ert_rtw/LCD_function.h \
+ C:/Users/diego/Dropbox/Academic/MENGSP~1/35330~1.DOC/ADCS_C~1/35C17~1.SIM/2D225~1.PHY/LCD/LCD_function_ert_rtw/rtwtypes.h \
+ C:/PROGRA~1/MATLAB/R2021b/simulink/include/rtw_extmode.h \
+ C:/PROGRA~1/MATLAB/R2021b/simulink/include/sysran_types.h \
+ C:/PROGRA~1/MATLAB/R2021b/simulink/include/rtw_continuous.h \
+ C:/Users/diego/Dropbox/Academic/MENGSP~1/35330~1.DOC/ADCS_C~1/35C17~1.SIM/2D225~1.PHY/LCD/LCD_function_ert_rtw/rtwtypes.h \
+ C:/PROGRA~1/MATLAB/R2021b/simulink/include/rtw_solver.h \
+ C:/PROGRA~1/MATLAB/R2021b/simulink/include/rtw_continuous.h \
+ C:/Users/diego/Dropbox/Academic/MENGSP~1/35330~1.DOC/ADCS_C~1/35C17~1.SIM/2D225~1.PHY/LCD/LCD_function_ert_rtw/Lcd_cgen_wrapper.h \
+ C:/Users/diego/Dropbox/Academic/MENGSP~1/35330~1.DOC/ADCS_C~1/35C17~1.SIM/2D225~1.PHY/LCD/LCD_function_ert_rtw/LCD_function_types.h \
+ C:/Users/diego/Dropbox/Academic/MENGSP~1/35330~1.DOC/ADCS_C~1/35C17~1.SIM/2D225~1.PHY/LCD/LCD_function_ert_rtw/multiword_types.h \
+ C:/Users/diego/Dropbox/Academic/MENGSP~1/35330~1.DOC/ADCS_C~1/35C17~1.SIM/2D225~1.PHY/LCD/LCD_function_ert_rtw/MW_target_hardware_resources.h \
+ C:/PROGRA~3/MATLAB/SUPPOR~1/R2021b/toolbox/target/SUPPOR~1/ARDUIN~1/SCHEDU~1/include/arduinoAVRScheduler.h \
+ C:/Users/diego/Dropbox/Academic/MENGSP~1/35330~1.DOC/ADCS_C~1/35C17~1.SIM/2D225~1.PHY/LCD/Arduino.h \
+ C:/Users/diego/Dropbox/Academic/MENGSP~1/35330~1.DOC/ADCS_C~1/35C17~1.SIM/2D225~1.PHY/LCD/binary.h \
+ C:/ProgramData/MATLAB/SupportPackages/R2021b/aIDE/hardware/arduino/avr/variants/standard/pins_arduino.h \
+ C:/Users/diego/Dropbox/Academic/MENGSP~1/35330~1.DOC/ADCS_C~1/35C17~1.SIM/2D225~1.PHY/LCD/LCD_function_ert_rtw/rt_nonfinite.h \
+ C:/Users/diego/Dropbox/Academic/MENGSP~1/35330~1.DOC/ADCS_C~1/35C17~1.SIM/2D225~1.PHY/LCD/LCD_function_ert_rtw/rtGetInf.h \
+ C:/Users/diego/Dropbox/Academic/MENGSP~1/35330~1.DOC/ADCS_C~1/35C17~1.SIM/2D225~1.PHY/LCD/LCD_function_ert_rtw/LCD_function_private.h
+
+C:/Users/diego/Dropbox/Academic/MENGSP~1/35330~1.DOC/ADCS_C~1/35C17~1.SIM/2D225~1.PHY/LCD/LCD_function_ert_rtw/LCD_function.h:
+
+C:/Users/diego/Dropbox/Academic/MENGSP~1/35330~1.DOC/ADCS_C~1/35C17~1.SIM/2D225~1.PHY/LCD/LCD_function_ert_rtw/rtwtypes.h:
+
+C:/PROGRA~1/MATLAB/R2021b/simulink/include/rtw_extmode.h:
+
+C:/PROGRA~1/MATLAB/R2021b/simulink/include/sysran_types.h:
+
+C:/PROGRA~1/MATLAB/R2021b/simulink/include/rtw_continuous.h:
+
+C:/Users/diego/Dropbox/Academic/MENGSP~1/35330~1.DOC/ADCS_C~1/35C17~1.SIM/2D225~1.PHY/LCD/LCD_function_ert_rtw/rtwtypes.h:
+
+C:/PROGRA~1/MATLAB/R2021b/simulink/include/rtw_solver.h:
+
+C:/PROGRA~1/MATLAB/R2021b/simulink/include/rtw_continuous.h:
+
+C:/Users/diego/Dropbox/Academic/MENGSP~1/35330~1.DOC/ADCS_C~1/35C17~1.SIM/2D225~1.PHY/LCD/LCD_function_ert_rtw/Lcd_cgen_wrapper.h:
+
+C:/Users/diego/Dropbox/Academic/MENGSP~1/35330~1.DOC/ADCS_C~1/35C17~1.SIM/2D225~1.PHY/LCD/LCD_function_ert_rtw/LCD_function_types.h:
+
+C:/Users/diego/Dropbox/Academic/MENGSP~1/35330~1.DOC/ADCS_C~1/35C17~1.SIM/2D225~1.PHY/LCD/LCD_function_ert_rtw/multiword_types.h:
+
+C:/Users/diego/Dropbox/Academic/MENGSP~1/35330~1.DOC/ADCS_C~1/35C17~1.SIM/2D225~1.PHY/LCD/LCD_function_ert_rtw/MW_target_hardware_resources.h:
+
+C:/PROGRA~3/MATLAB/SUPPOR~1/R2021b/toolbox/target/SUPPOR~1/ARDUIN~1/SCHEDU~1/include/arduinoAVRScheduler.h:
+
+C:/Users/diego/Dropbox/Academic/MENGSP~1/35330~1.DOC/ADCS_C~1/35C17~1.SIM/2D225~1.PHY/LCD/Arduino.h:
+
+C:/Users/diego/Dropbox/Academic/MENGSP~1/35330~1.DOC/ADCS_C~1/35C17~1.SIM/2D225~1.PHY/LCD/binary.h:
+
+C:/ProgramData/MATLAB/SupportPackages/R2021b/aIDE/hardware/arduino/avr/variants/standard/pins_arduino.h:
+
+C:/Users/diego/Dropbox/Academic/MENGSP~1/35330~1.DOC/ADCS_C~1/35C17~1.SIM/2D225~1.PHY/LCD/LCD_function_ert_rtw/rt_nonfinite.h:
+
+C:/Users/diego/Dropbox/Academic/MENGSP~1/35330~1.DOC/ADCS_C~1/35C17~1.SIM/2D225~1.PHY/LCD/LCD_function_ert_rtw/rtGetInf.h:
+
+C:/Users/diego/Dropbox/Academic/MENGSP~1/35330~1.DOC/ADCS_C~1/35C17~1.SIM/2D225~1.PHY/LCD/LCD_function_ert_rtw/LCD_function_private.h:

@@ -1,0 +1,38 @@
+io_wrappers.o: \
+ C:/ProgramData/MATLAB/SupportPackages/R2021b/toolbox/target/supportpackages/arduinobase/src/io_wrappers.cpp \
+ C:/Users/diego/Dropbox/Academic/MENGSP~1/35330~1.DOC/ADCS_C~1/35C17~1.SIM/2D225~1.PHY/LCD/Arduino.h \
+ C:/Users/diego/Dropbox/Academic/MENGSP~1/35330~1.DOC/ADCS_C~1/35C17~1.SIM/2D225~1.PHY/LCD/binary.h \
+ C:/Users/diego/Dropbox/Academic/MENGSP~1/35330~1.DOC/ADCS_C~1/35C17~1.SIM/2D225~1.PHY/LCD/WCharacter.h \
+ C:/Users/diego/Dropbox/Academic/MENGSP~1/35330~1.DOC/ADCS_C~1/35C17~1.SIM/2D225~1.PHY/LCD/WString.h \
+ C:/Users/diego/Dropbox/Academic/MENGSP~1/35330~1.DOC/ADCS_C~1/35C17~1.SIM/2D225~1.PHY/LCD/HardwareSerial.h \
+ C:/Users/diego/Dropbox/Academic/MENGSP~1/35330~1.DOC/ADCS_C~1/35C17~1.SIM/2D225~1.PHY/LCD/Stream.h \
+ C:/Users/diego/Dropbox/Academic/MENGSP~1/35330~1.DOC/ADCS_C~1/35C17~1.SIM/2D225~1.PHY/LCD/Print.h \
+ C:/Users/diego/Dropbox/Academic/MENGSP~1/35330~1.DOC/ADCS_C~1/35C17~1.SIM/2D225~1.PHY/LCD/Printable.h \
+ C:/Users/diego/Dropbox/Academic/MENGSP~1/35330~1.DOC/ADCS_C~1/35C17~1.SIM/2D225~1.PHY/LCD/USBAPI.h \
+ C:/Users/diego/Dropbox/Academic/MENGSP~1/35330~1.DOC/ADCS_C~1/35C17~1.SIM/2D225~1.PHY/LCD/Arduino.h \
+ C:/ProgramData/MATLAB/SupportPackages/R2021b/aIDE/hardware/arduino/avr/variants/standard/pins_arduino.h \
+ C:/Users/diego/Dropbox/Academic/MENGSP~1/35330~1.DOC/ADCS_C~1/35C17~1.SIM/2D225~1.PHY/LCD/LCD_function_ert_rtw/rtwtypes.h
+
+C:/Users/diego/Dropbox/Academic/MENGSP~1/35330~1.DOC/ADCS_C~1/35C17~1.SIM/2D225~1.PHY/LCD/Arduino.h:
+
+C:/Users/diego/Dropbox/Academic/MENGSP~1/35330~1.DOC/ADCS_C~1/35C17~1.SIM/2D225~1.PHY/LCD/binary.h:
+
+C:/Users/diego/Dropbox/Academic/MENGSP~1/35330~1.DOC/ADCS_C~1/35C17~1.SIM/2D225~1.PHY/LCD/WCharacter.h:
+
+C:/Users/diego/Dropbox/Academic/MENGSP~1/35330~1.DOC/ADCS_C~1/35C17~1.SIM/2D225~1.PHY/LCD/WString.h:
+
+C:/Users/diego/Dropbox/Academic/MENGSP~1/35330~1.DOC/ADCS_C~1/35C17~1.SIM/2D225~1.PHY/LCD/HardwareSerial.h:
+
+C:/Users/diego/Dropbox/Academic/MENGSP~1/35330~1.DOC/ADCS_C~1/35C17~1.SIM/2D225~1.PHY/LCD/Stream.h:
+
+C:/Users/diego/Dropbox/Academic/MENGSP~1/35330~1.DOC/ADCS_C~1/35C17~1.SIM/2D225~1.PHY/LCD/Print.h:
+
+C:/Users/diego/Dropbox/Academic/MENGSP~1/35330~1.DOC/ADCS_C~1/35C17~1.SIM/2D225~1.PHY/LCD/Printable.h:
+
+C:/Users/diego/Dropbox/Academic/MENGSP~1/35330~1.DOC/ADCS_C~1/35C17~1.SIM/2D225~1.PHY/LCD/USBAPI.h:
+
+C:/Users/diego/Dropbox/Academic/MENGSP~1/35330~1.DOC/ADCS_C~1/35C17~1.SIM/2D225~1.PHY/LCD/Arduino.h:
+
+C:/ProgramData/MATLAB/SupportPackages/R2021b/aIDE/hardware/arduino/avr/variants/standard/pins_arduino.h:
+
+C:/Users/diego/Dropbox/Academic/MENGSP~1/35330~1.DOC/ADCS_C~1/35C17~1.SIM/2D225~1.PHY/LCD/LCD_function_ert_rtw/rtwtypes.h:

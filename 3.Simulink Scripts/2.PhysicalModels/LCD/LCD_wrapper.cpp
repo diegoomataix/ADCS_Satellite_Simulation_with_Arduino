@@ -14,18 +14,15 @@
 
 /* %%%-SFUNWIZ_wrapper_includes_Changes_BEGIN --- EDIT HERE TO _END */
 #include <math.h>
-//#include "Arduino.h"
 #ifndef MATLAB_MEX_FILE
-#include "LiquidCrystal.h"
-#include "LiquidCrystal.cpp"
-
-// initialize the library with the numbers of the interface pins
-LiquidCrystal lcd(12, 10, 5, 4, 3, 2);
+    #include <Arduino.h>
+    #include "LiquidCrystal.h"
+    #include "LiquidCrystal.cpp"
+// initialize the library by associating any needed LCD interface pin
+LiquidCrystal lcd(12, 11, 5, 4, 3, 2);
 #endif
-
 /* %%%-SFUNWIZ_wrapper_includes_Changes_END --- EDIT HERE TO _BEGIN */
 #define u_width 1
-//#define y_width 1
 
 /*
  * Create external references here.  
@@ -39,7 +36,7 @@ LiquidCrystal lcd(12, 10, 5, 4, 3, 2);
  * Output function
  *
  */
-extern "C" void LCD_Outputs_wrapper(const uint16_T *char_val,
+void Lcd_Outputs_wrapper(const uint16_T *char_val,
 			const real_T *xD)
 {
 /* %%%-SFUNWIZ_wrapper_Outputs_Changes_BEGIN --- EDIT HERE TO _END */
@@ -50,31 +47,35 @@ extern "C" void LCD_Outputs_wrapper(const uint16_T *char_val,
       y1[0].re = u1[0].re;
       y1[0].im = u1[0].im;
  */
-if (xD[0] == 1)
+if(xD[0] == 1)
 {
     #ifndef MATLAB_MEX_FILE
   lcd.setCursor(0, 1);
   lcd.print(char_val[0]);
-  lcd.print((char)223);
-  lcd.print("C");
     #endif
 }
 /* %%%-SFUNWIZ_wrapper_Outputs_Changes_END --- EDIT HERE TO _BEGIN */
 }
 
-
-/* Update function */
-
-extern "C" void LCD_Update_wrapper(const uint16_T *char_val,
-			const real_T *xD)
+/*
+ * Updates function
+ *
+ */
+void Lcd_Update_wrapper(const uint16_T *char_val,
+			real_T *xD)
 {
-if (xD[0] == 1)
+/* %%%-SFUNWIZ_wrapper_Update_Changes_BEGIN --- EDIT HERE TO _END */
+if(xD[0] != 1)
 {
     #ifndef MATLAB_MEX_FILE
-  // set lcd number of columns and rows
-  lcd.begin(16,2)
-  // print a message
-  lcd.print("C");
+  // set up the LCD's number of columns and rorws:
+    lcd.begin(16, 2);
+    // print a message to the LCD
+    lcd.print("Angle");
     #endif
+    // done with initialization
+    xD[0] = 1;
 }
+/* %%%-SFUNWIZ_wrapper_Update_Changes_END --- EDIT HERE TO _BEGIN */
 }
+
