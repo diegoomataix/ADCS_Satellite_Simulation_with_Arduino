@@ -2,7 +2,7 @@
 ## Makefile generated for component 'test'. 
 ## 
 ## Makefile     : test.mk
-## Generated on : Mon Jan 03 16:16:10 2022
+## Generated on : Mon Jan 03 19:49:42 2022
 ## Final product: $(RELATIVE_PATH_TO_ANCHOR)/test.elf
 ## Product type : executable
 ## 

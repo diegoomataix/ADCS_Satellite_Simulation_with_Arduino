@@ -2,7 +2,7 @@
 ## Makefile generated for component 'LCD_function'. 
 ## 
 ## Makefile     : LCD_function.mk
-## Generated on : Mon Jan 03 16:10:43 2022
+## Generated on : Mon Jan 03 20:05:41 2022
 ## Final product: $(RELATIVE_PATH_TO_ANCHOR)/LCD_function.elf
 ## Product type : executable
 ## 

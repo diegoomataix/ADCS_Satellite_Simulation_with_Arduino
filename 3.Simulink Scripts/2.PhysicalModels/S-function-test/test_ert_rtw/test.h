@@ -7,9 +7,9 @@
  *
  * Code generated for Simulink model 'test'.
  *
- * Model version                  : 1.9
+ * Model version                  : 1.11
  * Simulink Coder version         : 9.6 (R2021b) 14-May-2021
- * C/C++ source code generated on : Mon Jan  3 16:16:05 2022
+ * C/C++ source code generated on : Mon Jan  3 19:49:38 2022
  *
  * Target selection: ert.tlc
  * Embedded hardware selection: Atmel->AVR
@@ -78,7 +78,7 @@
 
 /* Block states (default storage) for system '<Root>' */
 typedef struct {
-  real_T SFunctionBuilder_DSTATE;      /* '<Root>/S-Function Builder' */
+  real_T Hello_DSTATE;                 /* '<Root>/Hello' */
 } DW_test_T;
 
 /* Real-time Model Data Structure */

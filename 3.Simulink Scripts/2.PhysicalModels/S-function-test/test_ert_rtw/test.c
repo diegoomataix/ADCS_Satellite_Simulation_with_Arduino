@@ -7,9 +7,9 @@
  *
  * Code generated for Simulink model 'test'.
  *
- * Model version                  : 1.9
+ * Model version                  : 1.11
  * Simulink Coder version         : 9.6 (R2021b) 14-May-2021
- * C/C++ source code generated on : Mon Jan  3 16:16:05 2022
+ * C/C++ source code generated on : Mon Jan  3 19:49:38 2022
  *
  * Target selection: ert.tlc
  * Embedded hardware selection: Atmel->AVR
@@ -30,13 +30,13 @@ RT_MODEL_test_T *const test_M = &test_M_;
 /* Model step function */
 void test_step(void)
 {
-  /* S-Function (LED_Function): '<Root>/S-Function Builder' */
-  LED_Function_Outputs_wrapper_cgen(&test_DW.SFunctionBuilder_DSTATE);
+  /* S-Function (LED_Function): '<Root>/Hello' */
+  LED_Function_Outputs_wrapper_cgen(&test_DW.Hello_DSTATE);
 
-  /* Update for S-Function (LED_Function): '<Root>/S-Function Builder' */
+  /* Update for S-Function (LED_Function): '<Root>/Hello' */
 
-  /* S-Function "LED_Function_wrapper" Block: <Root>/S-Function Builder */
-  LED_Function_Update_wrapper_cgen(&test_DW.SFunctionBuilder_DSTATE);
+  /* S-Function "LED_Function_wrapper" Block: <Root>/Hello */
+  LED_Function_Update_wrapper_cgen(&test_DW.Hello_DSTATE);
 
   {                                    /* Sample time: [0.2s, 0.0s] */
   }
@@ -59,10 +59,10 @@ void test_initialize(void)
   test_M->Timing.stepSize0 = 0.2;
 
   /* External mode info */
-  test_M->Sizes.checksums[0] = (1799646038U);
-  test_M->Sizes.checksums[1] = (1365283993U);
-  test_M->Sizes.checksums[2] = (3439583727U);
-  test_M->Sizes.checksums[3] = (2554452215U);
+  test_M->Sizes.checksums[0] = (2638124958U);
+  test_M->Sizes.checksums[1] = (1613956300U);
+  test_M->Sizes.checksums[2] = (1816816086U);
+  test_M->Sizes.checksums[3] = (800064385U);
 
   {
     static const sysRanDType rtAlwaysEnabled = SUBSYS_RAN_BC_ENABLE;
@@ -77,16 +77,16 @@ void test_initialize(void)
     rteiSetTPtr(test_M->extModeInfo, rtmGetTPtr(test_M));
   }
 
-  /* InitializeConditions for S-Function (LED_Function): '<Root>/S-Function Builder' */
+  /* InitializeConditions for S-Function (LED_Function): '<Root>/Hello' */
 
-  /* S-Function Block: <Root>/S-Function Builder */
+  /* S-Function Block: <Root>/Hello */
   {
     real_T initVector[1] = { 0 };
 
     {
       int_T i1;
       for (i1=0; i1 < 1; i1++) {
-        test_DW.SFunctionBuilder_DSTATE = initVector[0];
+        test_DW.Hello_DSTATE = initVector[0];
       }
     }
   }

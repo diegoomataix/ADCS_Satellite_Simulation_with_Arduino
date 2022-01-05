@@ -7,9 +7,9 @@
  *
  * Code generation for model "LCD_function".
  *
- * Model version              : 1.8
+ * Model version              : 1.11
  * Simulink Coder version : 9.6 (R2021b) 14-May-2021
- * C source code generated on : Mon Jan  3 16:10:38 2022
+ * C source code generated on : Mon Jan  3 20:05:37 2022
  *
  * Target selection: ert.tlc
  * Embedded hardware selection: Atmel->AVR
