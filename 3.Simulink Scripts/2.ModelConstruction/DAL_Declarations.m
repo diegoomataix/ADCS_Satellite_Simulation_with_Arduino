@@ -18,8 +18,10 @@ end
 Beam_Mod = 1070.75*5/1023*ones(n_sensors,1); 
 Beam_Threshold = 50.0*5/1023;%*ones(n_sensors,1);
 %% Control
-Theta_rel = 0;              %Relative Angle with respect to Incident Light Angle in rad 
-
+Theta_target = 0;              %Relative Angle with respect to Incident Light Angle in rad 
+Theta_limit = 4*pi/180;
+V_wmax = 255;
+ServoRead = 90;                %This is temporary
 %% Prueba en ordenador
 theta = 40*pi/180;
 Vxp = Beam_Mod(1)*cos(theta);
