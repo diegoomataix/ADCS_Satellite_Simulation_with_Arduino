@@ -16,7 +16,7 @@ end
 % Beam_Mod = [1013.21,1070.75,1088.66,1131.68]*5/1023;    %[V]
 % Beam_Threshold = [97,123,136,137]*5/1023;               %[V]
 Beam_Mod = 1070.75*5/1023*ones(n_sensors,1); 
-Beam_Threshold = 50.0*5/1023;%*ones(n_sensors,1);
+Beam_Threshold = 150.0*5/1023;%*ones(n_sensors,1);
 %% Control
 Theta_target = 0;              %Relative Angle with respect to Incident Light Angle in rad 
 Theta_limit = 4*pi/180;
