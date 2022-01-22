@@ -36,7 +36,7 @@ LiquidCrystal lcd(12, 11, 5, 4, 3, 2);
  * Output function
  *
  */
-extern "C" void LCDControlSF_Outputs_wrapper(const uint16_T *char_val,
+void LCDControlSF_Outputs_wrapper(const uint16_T *char_val,
 			const real_T *xD)
 {
 /* %%%-SFUNWIZ_wrapper_Outputs_Changes_BEGIN --- EDIT HERE TO _END */
@@ -44,6 +44,8 @@ if(xD[0] == 1)
 {
 #ifndef MATLAB_MEX_FILE
 lcd.setCursor(0, 1);
+if(char_val[0] < 100) lcd.print("      ");
+if(char_val[0] < 10) lcd.print("       ");
 lcd.print(char_val[0]);
 #endif
 }
@@ -54,7 +56,7 @@ lcd.print(char_val[0]);
  * Updates function
  *
  */
-extern "C" void LCDControlSF_Update_wrapper(const uint16_T *char_val,
+void LCDControlSF_Update_wrapper(const uint16_T *char_val,
 			real_T *xD)
 {
 /* %%%-SFUNWIZ_wrapper_Update_Changes_BEGIN --- EDIT HERE TO _END */
@@ -64,7 +66,7 @@ if(xD[0] != 1)
       // set up the LCD's number of columns and rorws:
     lcd.begin(16, 2);
       // print a message to the LCD
-    lcd.print("Angle");
+    lcd.print("Incidence Angle [deg]:");
     #endif
       // done with initialization
 xD[0] = 1;

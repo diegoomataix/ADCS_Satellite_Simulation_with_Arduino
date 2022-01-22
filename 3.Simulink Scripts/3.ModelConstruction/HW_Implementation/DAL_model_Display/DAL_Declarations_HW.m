@@ -23,6 +23,6 @@ V_wmax = 255;
 % box("on")
 % axis([0, 180, 0, 255])
 % grid("minor")
-% xlabel("Ángulo comandado al servo, \theta [\circ]", "FontSize", 26)
-% ylabel("Duración del pulso PWM normlaizado",  "FontSize", 26)
+% xlabel("Ángulo de giro del servo, \theta [\circ]", "FontSize", 16)
+% ylabel("PWM normalized Arduino value",  "FontSize", 16)
 % hold off
