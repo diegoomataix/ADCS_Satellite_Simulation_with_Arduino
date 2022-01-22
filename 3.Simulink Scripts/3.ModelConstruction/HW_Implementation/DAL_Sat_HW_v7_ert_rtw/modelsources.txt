@@ -1,2 +1,0 @@
-    DAL_Sat_HW_v7.c
-
