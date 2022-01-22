@@ -1,0 +1,62 @@
+DAL_Sat_HW_v7_data.o: \
+ C:/Users/diego/Dropbox/Academic/MENGSP~1/35330~1.DOC/ADCS_C~1/35C17~1.SIM/3E193~1.MOD/HW_IMP~1/DAL_Sat_HW_v7_ert_rtw/DAL_Sat_HW_v7_data.c \
+ C:/Users/diego/Dropbox/Academic/MENGSP~1/35330~1.DOC/ADCS_C~1/35C17~1.SIM/3E193~1.MOD/HW_IMP~1/DAL_Sat_HW_v7_ert_rtw/DAL_Sat_HW_v7.h \
+ C:/Users/diego/Dropbox/Academic/MENGSP~1/35330~1.DOC/ADCS_C~1/35C17~1.SIM/3E193~1.MOD/HW_IMP~1/DAL_Sat_HW_v7_ert_rtw/rtwtypes.h \
+ C:/PROGRA~1/MATLAB/R2021b/simulink/include/rtw_continuous.h \
+ C:/Users/diego/Dropbox/Academic/MENGSP~1/35330~1.DOC/ADCS_C~1/35C17~1.SIM/3E193~1.MOD/HW_IMP~1/DAL_Sat_HW_v7_ert_rtw/rtwtypes.h \
+ C:/PROGRA~1/MATLAB/R2021b/simulink/include/rtw_solver.h \
+ C:/PROGRA~1/MATLAB/R2021b/simulink/include/rtw_continuous.h \
+ C:/PROGRA~3/MATLAB/SUPPOR~1/R2021b/toolbox/target/SUPPOR~1/ARDUIN~2/include/MW_ServoWriteRead.h \
+ C:/PROGRA~3/MATLAB/SUPPOR~1/R2021b/toolbox/target/shared/svd/include/MW_AnalogIn.h \
+ C:/PROGRA~3/MATLAB/SUPPOR~1/R2021b/toolbox/target/shared/svd/include/MW_SVD.h \
+ C:/Users/diego/Dropbox/Academic/MENGSP~1/35330~1.DOC/ADCS_C~1/35C17~1.SIM/3E193~1.MOD/HW_IMP~1/DAL_Sat_HW_v7_ert_rtw/DAL_Sat_HW_v7_types.h \
+ C:/PROGRA~3/MATLAB/SUPPOR~1/R2021b/toolbox/target/shared/svd/include/MW_SVD.h \
+ C:/Users/diego/Dropbox/Academic/MENGSP~1/35330~1.DOC/ADCS_C~1/35C17~1.SIM/3E193~1.MOD/HW_IMP~1/DAL_Sat_HW_v7_ert_rtw/MW_target_hardware_resources.h \
+ C:/PROGRA~3/MATLAB/SUPPOR~1/R2021b/toolbox/target/SUPPOR~1/ARDUIN~1/SCHEDU~1/include/arduinoAVRScheduler.h \
+ C:/ProgramData/MATLAB/SupportPackages/R2021b/aIDE/hardware/arduino/avr/cores/arduino/Arduino.h \
+ C:/ProgramData/MATLAB/SupportPackages/R2021b/aIDE/hardware/arduino/avr/cores/arduino/binary.h \
+ C:/ProgramData/MATLAB/SupportPackages/R2021b/aIDE/hardware/arduino/avr/variants/standard/pins_arduino.h \
+ C:/Users/diego/Dropbox/Academic/MENGSP~1/35330~1.DOC/ADCS_C~1/35C17~1.SIM/3E193~1.MOD/HW_IMP~1/DAL_Sat_HW_v7_ert_rtw/rt_defines.h \
+ C:/Users/diego/Dropbox/Academic/MENGSP~1/35330~1.DOC/ADCS_C~1/35C17~1.SIM/3E193~1.MOD/HW_IMP~1/DAL_Sat_HW_v7_ert_rtw/rt_nonfinite.h \
+ C:/Users/diego/Dropbox/Academic/MENGSP~1/35330~1.DOC/ADCS_C~1/35C17~1.SIM/3E193~1.MOD/HW_IMP~1/DAL_Sat_HW_v7_ert_rtw/rtGetInf.h \
+ C:/Users/diego/Dropbox/Academic/MENGSP~1/35330~1.DOC/ADCS_C~1/35C17~1.SIM/3E193~1.MOD/HW_IMP~1/DAL_Sat_HW_v7_ert_rtw/DAL_Sat_HW_v7_private.h
+
+C:/Users/diego/Dropbox/Academic/MENGSP~1/35330~1.DOC/ADCS_C~1/35C17~1.SIM/3E193~1.MOD/HW_IMP~1/DAL_Sat_HW_v7_ert_rtw/DAL_Sat_HW_v7.h:
+
+C:/Users/diego/Dropbox/Academic/MENGSP~1/35330~1.DOC/ADCS_C~1/35C17~1.SIM/3E193~1.MOD/HW_IMP~1/DAL_Sat_HW_v7_ert_rtw/rtwtypes.h:
+
+C:/PROGRA~1/MATLAB/R2021b/simulink/include/rtw_continuous.h:
+
+C:/Users/diego/Dropbox/Academic/MENGSP~1/35330~1.DOC/ADCS_C~1/35C17~1.SIM/3E193~1.MOD/HW_IMP~1/DAL_Sat_HW_v7_ert_rtw/rtwtypes.h:
+
+C:/PROGRA~1/MATLAB/R2021b/simulink/include/rtw_solver.h:
+
+C:/PROGRA~1/MATLAB/R2021b/simulink/include/rtw_continuous.h:
+
+C:/PROGRA~3/MATLAB/SUPPOR~1/R2021b/toolbox/target/SUPPOR~1/ARDUIN~2/include/MW_ServoWriteRead.h:
+
+C:/PROGRA~3/MATLAB/SUPPOR~1/R2021b/toolbox/target/shared/svd/include/MW_AnalogIn.h:
+
+C:/PROGRA~3/MATLAB/SUPPOR~1/R2021b/toolbox/target/shared/svd/include/MW_SVD.h:
+
+C:/Users/diego/Dropbox/Academic/MENGSP~1/35330~1.DOC/ADCS_C~1/35C17~1.SIM/3E193~1.MOD/HW_IMP~1/DAL_Sat_HW_v7_ert_rtw/DAL_Sat_HW_v7_types.h:
+
+C:/PROGRA~3/MATLAB/SUPPOR~1/R2021b/toolbox/target/shared/svd/include/MW_SVD.h:
+
+C:/Users/diego/Dropbox/Academic/MENGSP~1/35330~1.DOC/ADCS_C~1/35C17~1.SIM/3E193~1.MOD/HW_IMP~1/DAL_Sat_HW_v7_ert_rtw/MW_target_hardware_resources.h:
+
+C:/PROGRA~3/MATLAB/SUPPOR~1/R2021b/toolbox/target/SUPPOR~1/ARDUIN~1/SCHEDU~1/include/arduinoAVRScheduler.h:
+
+C:/ProgramData/MATLAB/SupportPackages/R2021b/aIDE/hardware/arduino/avr/cores/arduino/Arduino.h:
+
+C:/ProgramData/MATLAB/SupportPackages/R2021b/aIDE/hardware/arduino/avr/cores/arduino/binary.h:
+
+C:/ProgramData/MATLAB/SupportPackages/R2021b/aIDE/hardware/arduino/avr/variants/standard/pins_arduino.h:
+
+C:/Users/diego/Dropbox/Academic/MENGSP~1/35330~1.DOC/ADCS_C~1/35C17~1.SIM/3E193~1.MOD/HW_IMP~1/DAL_Sat_HW_v7_ert_rtw/rt_defines.h:
+
+C:/Users/diego/Dropbox/Academic/MENGSP~1/35330~1.DOC/ADCS_C~1/35C17~1.SIM/3E193~1.MOD/HW_IMP~1/DAL_Sat_HW_v7_ert_rtw/rt_nonfinite.h:
+
+C:/Users/diego/Dropbox/Academic/MENGSP~1/35330~1.DOC/ADCS_C~1/35C17~1.SIM/3E193~1.MOD/HW_IMP~1/DAL_Sat_HW_v7_ert_rtw/rtGetInf.h:
+
+C:/Users/diego/Dropbox/Academic/MENGSP~1/35330~1.DOC/ADCS_C~1/35C17~1.SIM/3E193~1.MOD/HW_IMP~1/DAL_Sat_HW_v7_ert_rtw/DAL_Sat_HW_v7_private.h:
