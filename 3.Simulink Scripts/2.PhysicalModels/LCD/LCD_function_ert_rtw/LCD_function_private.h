@@ -7,9 +7,9 @@
  *
  * Code generated for Simulink model 'LCD_function'.
  *
- * Model version                  : 1.11
+ * Model version                  : 1.13
  * Simulink Coder version         : 9.6 (R2021b) 14-May-2021
- * C/C++ source code generated on : Mon Jan  3 20:05:37 2022
+ * C/C++ source code generated on : Thu Jan 20 22:07:26 2022
  *
  * Target selection: ert.tlc
  * Embedded hardware selection: Atmel->AVR
@@ -20,13 +20,6 @@
 #ifndef RTW_HEADER_LCD_function_private_h_
 #define RTW_HEADER_LCD_function_private_h_
 #include "rtwtypes.h"
-#include "multiword_types.h"
-
-/* Private macros used by the generated code to access rtModel */
-#ifndef rtmSetTFinal
-#define rtmSetTFinal(rtm, val)         ((rtm)->Timing.tFinal = (val))
-#endif
-
 #ifdef __cplusplus
 #define SFB_EXTERN_C                   extern "C"
 #else

@@ -7,9 +7,9 @@
  *
  * Code generated for Simulink model 'LCD_function'.
  *
- * Model version                  : 1.11
+ * Model version                  : 1.13
  * Simulink Coder version         : 9.6 (R2021b) 14-May-2021
- * C/C++ source code generated on : Mon Jan  3 20:05:37 2022
+ * C/C++ source code generated on : Thu Jan 20 22:07:26 2022
  *
  * Target selection: ert.tlc
  * Embedded hardware selection: Atmel->AVR
@@ -19,15 +19,11 @@
 
 #include "LCD_function.h"
 #include "rtwtypes.h"
-#include "xcp.h"
-#include "ext_mode.h"
 
 volatile int IsrOverrun = 0;
 static boolean_T OverrunFlag = 0;
 void rt_OneStep(void)
 {
-  extmodeSimulationTime_T currentTime = (extmodeSimulationTime_T) 0;
-
   /* Check for overrun. Protect OverrunFlag against preemption */
   if (OverrunFlag++) {
     IsrOverrun = 1;
@@ -41,14 +37,9 @@ void rt_OneStep(void)
 
 #endif;
 
-  currentTime = (extmodeSimulationTime_T) LCD_function_M->Timing.clockTick0;
   LCD_function_step();
 
   /* Get model outputs here */
-
-  /* Trigger External Mode event */
-  extmodeEvent(0, currentTime);
-
 #ifndef _MW_ARDUINO_LOOP_
 
   cli();
@@ -58,14 +49,12 @@ void rt_OneStep(void)
   OverrunFlag--;
 }
 
-extern void rtIOStreamResync();
 volatile boolean_T stopRequested;
 volatile boolean_T runModel;
 int main(void)
 {
   float modelBaseRate = 0.2;
   float systemClock = 0;
-  extmodeErrorCode_T errorCode = EXTMODE_SUCCESS;
 
   /* Initialize variables */
   stopRequested = false;
@@ -73,40 +62,11 @@ int main(void)
   init();
   MW_Arduino_Init();
   rtmSetErrorStatus(LCD_function_M, 0);
-
-  /* Set Final Simulation Time in Ticks */
-  errorCode = extmodeSetFinalSimulationTime((extmodeSimulationTime_T) 50);
-
-  /* Parse External Mode command line arguments */
-  errorCode = extmodeParseArgs(0, NULL);
-  if (errorCode != EXTMODE_SUCCESS) {
-    return (errorCode);
-  }
-
   LCD_function_initialize();
-  cli();
-  sei ();
-
-  /* External Mode initialization */
-  errorCode = extmodeInit(LCD_function_M->extModeInfo, &rtmGetTFinal
-    (LCD_function_M));
-  if (errorCode != EXTMODE_SUCCESS) {
-    /* Code to handle External Mode initialization errors
-       may be added here */
-  }
-
-  if (errorCode == EXTMODE_SUCCESS) {
-    /* Wait until a Start or Stop Request has been received from the Host */
-    extmodeWaitForHostRequest(EXTMODE_WAIT_FOREVER);
-    if (extmodeStopRequested()) {
-      rtmSetStopRequested(LCD_function_M, true);
-    }
-  }
-
   cli();
   configureArduinoAVRTimer();
   runModel =
-    !extmodeSimulationComplete() && !extmodeStopRequested();
+    rtmGetErrorStatus(LCD_function_M) == (NULL);
 
 #ifndef _MW_ARDUINO_LOOP_
 
@@ -114,32 +74,16 @@ int main(void)
 
 #endif;
 
-  XcpStatus lastXcpState = xcpStatusGet();
   sei ();
   while (runModel) {
-    /* Run External Mode background activities */
-    errorCode = extmodeBackgroundRun();
-    if (errorCode != EXTMODE_SUCCESS) {
-      /* Code to handle External Mode background task errors
-         may be added here */
-    }
-
     stopRequested = !(
-                      !extmodeSimulationComplete() && !extmodeStopRequested());
+                      rtmGetErrorStatus(LCD_function_M) == (NULL));
     runModel = !(stopRequested);
-    if (stopRequested)
-      disable_rt_OneStep();
-    if (lastXcpState==XCP_CONNECTED && xcpStatusGet()==XCP_DISCONNECTED)
-      rtIOStreamResync();
-    lastXcpState = xcpStatusGet();
     MW_Arduino_Loop();
   }
 
   /* Terminate model */
   LCD_function_terminate();
-
-  /* External Mode reset */
-  extmodeReset();
   cli();
   return 0;
 }

@@ -7,9 +7,9 @@
  *
  * Code generated for Simulink model 'LCD_function'.
  *
- * Model version                  : 1.11
+ * Model version                  : 1.13
  * Simulink Coder version         : 9.6 (R2021b) 14-May-2021
- * C/C++ source code generated on : Mon Jan  3 20:05:37 2022
+ * C/C++ source code generated on : Thu Jan 20 22:07:26 2022
  *
  * Target selection: ert.tlc
  * Embedded hardware selection: Atmel->AVR
@@ -58,19 +58,6 @@ void LCD_function_step(void)
   /* S-Function "Lcd_wrapper" Block: <Root>/S-Function Builder */
   Lcd_Update_wrapper_cgen(&LCD_function_B.DataTypeConversion,
     &LCD_function_DW.SFunctionBuilder_DSTATE);
-
-  {                                    /* Sample time: [0.2s, 0.0s] */
-  }
-
-  /* Update absolute time for base rate */
-  /* The "clockTick0" counts the number of times the code of this task has
-   * been executed. The absolute time is the multiplication of "clockTick0"
-   * and "Timing.stepSize0". Size of "clockTick0" ensures timer will not
-   * overflow during the application lifespan selected.
-   */
-  LCD_function_M->Timing.taskTime0 =
-    ((time_T)(++LCD_function_M->Timing.clockTick0)) *
-    LCD_function_M->Timing.stepSize0;
 }
 
 /* Model initialize function */
@@ -80,28 +67,6 @@ void LCD_function_initialize(void)
 
   /* initialize non-finites */
   rt_InitInfAndNaN(sizeof(real_T));
-  rtmSetTFinal(LCD_function_M, 10.0);
-  LCD_function_M->Timing.stepSize0 = 0.2;
-
-  /* External mode info */
-  LCD_function_M->Sizes.checksums[0] = (2417868039U);
-  LCD_function_M->Sizes.checksums[1] = (137805099U);
-  LCD_function_M->Sizes.checksums[2] = (2823460208U);
-  LCD_function_M->Sizes.checksums[3] = (885875393U);
-
-  {
-    static const sysRanDType rtAlwaysEnabled = SUBSYS_RAN_BC_ENABLE;
-    static RTWExtModeInfo rt_ExtModeInfo;
-    static const sysRanDType *systemRan[1];
-    LCD_function_M->extModeInfo = (&rt_ExtModeInfo);
-    rteiSetSubSystemActiveVectorAddresses(&rt_ExtModeInfo, systemRan);
-    systemRan[0] = &rtAlwaysEnabled;
-    rteiSetModelMappingInfoPtr(LCD_function_M->extModeInfo,
-      &LCD_function_M->SpecialInfo.mappingInfo);
-    rteiSetChecksumsPtr(LCD_function_M->extModeInfo,
-                        LCD_function_M->Sizes.checksums);
-    rteiSetTPtr(LCD_function_M->extModeInfo, rtmGetTPtr(LCD_function_M));
-  }
 
   /* InitializeConditions for S-Function (Lcd): '<Root>/S-Function Builder' */
 

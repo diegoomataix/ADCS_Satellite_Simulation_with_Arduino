@@ -7,9 +7,9 @@
  *
  * Code generated for Simulink model 'LCD_function'.
  *
- * Model version                  : 1.11
+ * Model version                  : 1.13
  * Simulink Coder version         : 9.6 (R2021b) 14-May-2021
- * C/C++ source code generated on : Mon Jan  3 20:05:37 2022
+ * C/C++ source code generated on : Thu Jan 20 22:07:26 2022
  *
  * Target selection: ert.tlc
  * Embedded hardware selection: Atmel->AVR
@@ -20,63 +20,27 @@
 #ifndef RTW_HEADER_LCD_function_h_
 #define RTW_HEADER_LCD_function_h_
 #include <math.h>
+#include <stddef.h>
 #ifndef LCD_function_COMMON_INCLUDES_
 #define LCD_function_COMMON_INCLUDES_
 #include "rtwtypes.h"
-#include "rtw_extmode.h"
-#include "sysran_types.h"
 #include "rtw_continuous.h"
 #include "rtw_solver.h"
 #include "Lcd_cgen_wrapper.h"
 #endif                                 /* LCD_function_COMMON_INCLUDES_ */
 
 #include "LCD_function_types.h"
-
-/* Shared type includes */
-#include "multiword_types.h"
 #include "MW_target_hardware_resources.h"
 #include "rt_nonfinite.h"
 #include "rtGetInf.h"
 
 /* Macros for accessing real-time model data structure */
-#ifndef rtmGetFinalTime
-#define rtmGetFinalTime(rtm)           ((rtm)->Timing.tFinal)
-#endif
-
-#ifndef rtmGetRTWExtModeInfo
-#define rtmGetRTWExtModeInfo(rtm)      ((rtm)->extModeInfo)
-#endif
-
 #ifndef rtmGetErrorStatus
 #define rtmGetErrorStatus(rtm)         ((rtm)->errorStatus)
 #endif
 
 #ifndef rtmSetErrorStatus
 #define rtmSetErrorStatus(rtm, val)    ((rtm)->errorStatus = (val))
-#endif
-
-#ifndef rtmGetStopRequested
-#define rtmGetStopRequested(rtm)       ((rtm)->Timing.stopRequestedFlag)
-#endif
-
-#ifndef rtmSetStopRequested
-#define rtmSetStopRequested(rtm, val)  ((rtm)->Timing.stopRequestedFlag = (val))
-#endif
-
-#ifndef rtmGetStopRequestedPtr
-#define rtmGetStopRequestedPtr(rtm)    (&((rtm)->Timing.stopRequestedFlag))
-#endif
-
-#ifndef rtmGetT
-#define rtmGetT(rtm)                   ((rtm)->Timing.taskTime0)
-#endif
-
-#ifndef rtmGetTFinal
-#define rtmGetTFinal(rtm)              ((rtm)->Timing.tFinal)
-#endif
-
-#ifndef rtmGetTPtr
-#define rtmGetTPtr(rtm)                (&(rtm)->Timing.taskTime0)
 #endif
 
 /* Block signals (default storage) */
@@ -87,13 +51,6 @@ typedef struct {
 /* Block states (default storage) for system '<Root>' */
 typedef struct {
   real_T SFunctionBuilder_DSTATE;      /* '<Root>/S-Function Builder' */
-  struct {
-    void *LoggedData;
-  } Scope_PWORK;                       /* '<Root>/Scope' */
-
-  struct {
-    void *AQHandles;
-  } TAQSigLogging_InsertedFor_DataT;   /* synthesized block */
 } DW_LCD_function_T;
 
 /* Parameters (default storage) */
@@ -105,40 +62,7 @@ struct P_LCD_function_T_ {
 
 /* Real-time Model Data Structure */
 struct tag_RTM_LCD_function_T {
-  const char_T *errorStatus;
-  RTWExtModeInfo *extModeInfo;
-
-  /*
-   * Sizes:
-   * The following substructure contains sizes information
-   * for many of the model attributes such as inputs, outputs,
-   * dwork, sample times, etc.
-   */
-  struct {
-    uint32_T checksums[4];
-  } Sizes;
-
-  /*
-   * SpecialInfo:
-   * The following substructure contains special information
-   * related to other components that are dependent on RTW.
-   */
-  struct {
-    const void *mappingInfo;
-  } SpecialInfo;
-
-  /*
-   * Timing:
-   * The following substructure contains information regarding
-   * the timing information for the model.
-   */
-  struct {
-    time_T taskTime0;
-    uint32_T clockTick0;
-    time_T stepSize0;
-    time_T tFinal;
-    boolean_T stopRequestedFlag;
-  } Timing;
+  const char_T * volatile errorStatus;
 };
 
 /* Block parameters (default storage) */
@@ -159,6 +83,13 @@ extern void LCD_function_terminate(void);
 extern RT_MODEL_LCD_function_T *const LCD_function_M;
 extern volatile boolean_T stopRequested;
 extern volatile boolean_T runModel;
+
+/*-
+ * These blocks were eliminated from the model due to optimizations:
+ *
+ * Block '<Root>/Display' : Unused code path elimination
+ * Block '<Root>/Scope' : Unused code path elimination
+ */
 
 /*-
  * The generated code includes comments that allow you to trace directly

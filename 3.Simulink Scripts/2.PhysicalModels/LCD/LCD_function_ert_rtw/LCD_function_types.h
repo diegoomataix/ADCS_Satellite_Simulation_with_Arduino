@@ -7,9 +7,9 @@
  *
  * Code generated for Simulink model 'LCD_function'.
  *
- * Model version                  : 1.11
+ * Model version                  : 1.13
  * Simulink Coder version         : 9.6 (R2021b) 14-May-2021
- * C/C++ source code generated on : Mon Jan  3 20:05:37 2022
+ * C/C++ source code generated on : Thu Jan 20 22:07:26 2022
  *
  * Target selection: ert.tlc
  * Embedded hardware selection: Atmel->AVR
@@ -20,7 +20,6 @@
 #ifndef RTW_HEADER_LCD_function_types_h_
 #define RTW_HEADER_LCD_function_types_h_
 #include "rtwtypes.h"
-#include "multiword_types.h"
 
 /* Model Code Variants */
 
